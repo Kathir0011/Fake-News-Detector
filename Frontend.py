@@ -41,7 +41,7 @@ def preprocess(text):
 
 def main():
     st.title("Real and Fake News Detector")
-    text = st.text_area("Enter the News you saw:", placeholder="Enter here...",
+    text = st.text_area("Enter the News you saw:", placeholder="Copy & Paste the News here...",
                         help="Provide the News description you want to verify", height=350, max_chars=10000)
 
     if st.button("Submit"):
