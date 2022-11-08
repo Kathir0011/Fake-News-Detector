@@ -40,7 +40,17 @@ def preprocess(text):
 
 
 def main():
-    st.title("Real and Fake News Detector")
+    with st.sidebar:
+        st.title("About:")
+        st.markdown(
+        "- Predicts whether the Entered News is Fake or not.\n"
+        "- This helps the people to be aware of the Fake News that are being spread by Non-standard News sites."
+        )
+        st.title("Other Projects:")
+        st.markdown("💰 [US Health Insurance Cost Prediction](https://health-insurance-predictor-k19.streamlit.app/)")
+            
+        
+    st.title("Fake News Detector")
     text = st.text_area("Enter the News you saw:", placeholder="Copy & Paste the News here...",
                         help="Provide the News description you want to verify", height=350, max_chars=10000)
 
@@ -57,7 +67,7 @@ def main():
             if result == "Real News":
                 st.success(result, icon="✅")
             else:
-                st.error(result, icon="❌")
+                st.error("Probably Fake, Please verify with other News sites", icon="❌")
 
     st.info("This Detector helps you to be aware of the fake news that are being published.", icon="ℹ️")
 
