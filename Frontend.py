@@ -47,7 +47,7 @@ def main():
         "- This helps the people to be aware of the Fake News that are being spread by Non-standard News sites."
         )
         st.title("Other Projects:")
-        st.markdown("💰 [US Health Insurance Cost Prediction](https://health-insurance-predictor-k19.streamlit.app/)")
+        st.markdown("💰 [US Health Insurance Cost Prediction](https://health-insurance-cost-predictor-k19.streamlit.app/)")
             
         
     st.title("Fake News Detector")
