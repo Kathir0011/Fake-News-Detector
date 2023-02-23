@@ -43,8 +43,8 @@ def main():
     with st.sidebar:
         st.title("About:")
         st.markdown(
-        "- Predicts whether the Entered News is Fake or not.\n"
-        "- This helps the people to be aware of the Fake News that are being spread by Non-standard News sites."
+        "- Predicts whether the Entered News Article is Fake or not.\n"
+        "- This helps the people to be aware of the Fake News articles that are being spread by Non-standard News sites."
         )
         st.title("Other Projects:")
         st.markdown("💰 [US Health Insurance Cost Prediction](https://health-insurance-cost-predictor-k19.streamlit.app/)")
@@ -52,7 +52,7 @@ def main():
         
     st.title("Fake News Detector")
     text = st.text_area("Enter the News you saw:", placeholder="Copy & Paste the News here...",
-                        help="Provide the News description you want to verify", height=350, max_chars=10000)
+                        help="Provide the News Article description you want to verify", height=350, max_chars=10000)
 
     if st.button("Submit"):
         st.snow()
@@ -67,9 +67,9 @@ def main():
             if result == "Real News":
                 st.success(result, icon="✅")
             else:
-                st.error("Probably Fake, Please verify with other News sites", icon="❌")
+                st.error("Probably a Fake Article, Please verify with other News sites", icon="❌")
 
-    st.info("This Detector helps you to be aware of the fake news that are being published.", icon="ℹ️")
+    st.info("This Detector helps you to be aware of the fake news articles that are being published.", icon="ℹ️")
 
 
 if __name__ == "__main__":
