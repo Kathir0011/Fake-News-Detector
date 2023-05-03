@@ -48,7 +48,8 @@ def main():
         )
         st.title("Other Projects:")
         st.markdown("💰 [US Health Insurance Cost Prediction](https://health-insurance-cost-predictor-k19.streamlit.app/)\n\n"\
-                    "🪶 [Birds Classifier](https://huggingface.co/spaces/Kathir0011/Birds_Classification)")
+                    "🪶 [Birds Classifier](https://huggingface.co/spaces/Kathir0011/Birds_Classification)\n\n"\
+                    "🧑‍💻 [YouTube Video Assistant](https://huggingface.co/spaces/Kathir0011/YouTube_Video_Assistant)")
             
         
     st.title("Fake News Detector")
